@@ -41,7 +41,7 @@
             <!-- Desktop Menu -->
             <ul class="hidden md:flex space-x-8">
                 <li><a href="#contact" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">Kontakt<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-400 transition-all group-hover:w-full"></span></a></li>
-                <li><a href="#skills" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">Co dokážu<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-400 transition-all group-hover:w-full"></span></a></li>
+                <li><a href="#skills" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">Dovednosti & Služby<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-400 transition-all group-hover:w-full"></span></a></li>
                 <li><a href="#projects" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">Projekty<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-400 transition-all group-hover:w-full"></span></a></li>
             </ul>
 
@@ -54,13 +54,13 @@
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 bg-zinc-950 transition-transform duration-500 translate-x-full md:hidden flex flex-col items-center justify-center h-screen space-y-8 z-40">
             <a href="#contact" class="mobile-link text-2xl font-bold text-zinc-100 hover:text-sky-400 transition-all">Kontakt</a>
-            <a href="#skills" class="mobile-link text-2xl font-bold text-zinc-100 hover:text-sky-400 transition-all">Co dokážu</a>
+            <a href="#skills" class="mobile-link text-2xl font-bold text-zinc-100 hover:text-sky-400 transition-all">Dovednosti & Služby</a>
             <a href="#projects" class="mobile-link text-2xl font-bold text-zinc-100 hover:text-sky-400 transition-all">Projekty</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex flex-col md:flex-row overflow-hidden pt-16">
+    <section id="contact" class="relative min-h-screen flex flex-col md:flex-row overflow-hidden pt-16">
         <!-- Background Layer -->
         <div class="absolute inset-0 z-0 pointer-events-none opacity-20 md:opacity-40 grayscale"
              style="background-image: linear-gradient(to right, rgba(9, 9, 11, 0.95), rgba(9, 9, 11, 0.7)), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center;">
@@ -71,7 +71,7 @@
             <img src="https://picsum.photos/seed/portrait/800/1200" alt="Martin Bucňák" class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-1000" />
             <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent">
                 <h2 class="text-2xl md:text-3xl font-black text-white leading-none mb-1">MARTIN</h2>
-                <p class="text-sky-400 font-bold uppercase tracking-widest text-xs md:text-sm">Design & Vývoj</p>
+                <p class="text-sky-400 font-bold uppercase tracking-widest text-xs md:text-sm">Student IT</p>
             </div>
         </div>
 
@@ -87,14 +87,25 @@
                         <span class="text-sky-400 inline-block mt-1">Martina Bucňáka</span>
                     </h1>
                     <p class="text-zinc-400 text-base md:text-lg lg:text-xl max-w-xl mx-auto md:mx-0 mb-12">
-                        Programátor a 3D tvůrce se zálibou v technologiích a funkčním designu.
+                        Student IT studující na střední škole Brno Olomoucká
                     </p>
                 </div>
 
                 <!-- Social Links (Hardcoded from constants) -->
                 <div id="hero-links" class="flex flex-col items-center md:items-start space-y-4 w-full transition-all duration-1000 delay-500 transform translate-y-10 opacity-0">
                     
-                    <a href="https://instagram.com/martinbucnak" target="_blank" class="group relative flex items-center justify-between w-full max-w-md bg-zinc-900/40 border border-zinc-800/50 hover:border-sky-400/50 hover:bg-zinc-800/60 p-4 rounded-2xl transition-all duration-300 backdrop-blur-sm">
+                    <!-- Email Copy Button -->
+                    <button onclick="copyEmail('mbucnak@gmail.com', this)" class="group relative flex items-center justify-between w-full max-w-md bg-zinc-900/40 border border-zinc-800/50 hover:border-sky-400/50 hover:bg-zinc-800/60 p-4 rounded-2xl transition-all duration-300 backdrop-blur-sm cursor-pointer">
+                        <div class="flex items-center space-x-4">
+                            <div class="p-2 bg-zinc-800 rounded-lg group-hover:bg-sky-400 group-hover:text-white transition-colors"><i data-lucide="mail" size="20"></i></div>
+                            <span class="font-medium text-zinc-200 group-hover:text-white transition-colors">Email: mbucnak@gmail.com</span>
+                        </div>
+                        <div class="text-zinc-500 group-hover:text-zinc-300 icon-area">
+                            <i data-lucide="copy" size="18"></i>
+                        </div>
+                    </button>
+
+                    <a href="https://www.instagram.com/martin.penguin/" target="_blank" class="group relative flex items-center justify-between w-full max-w-md bg-zinc-900/40 border border-zinc-800/50 hover:border-sky-400/50 hover:bg-zinc-800/60 p-4 rounded-2xl transition-all duration-300 backdrop-blur-sm">
                         <div class="flex items-center space-x-4">
                             <div class="p-2 bg-zinc-800 rounded-lg group-hover:bg-sky-400 group-hover:text-white transition-colors"><i data-lucide="instagram" size="20"></i></div>
                             <span class="font-medium text-zinc-200 group-hover:text-white transition-colors">Instagram</span>
@@ -102,7 +113,7 @@
                         <div class="w-2 h-2 rounded-full bg-zinc-700 group-hover:bg-sky-400 transition-colors"></div>
                     </a>
 
-                    <a href="https://facebook.com/martinbucnak" target="_blank" class="group relative flex items-center justify-between w-full max-w-md bg-zinc-900/40 border border-zinc-800/50 hover:border-sky-400/50 hover:bg-zinc-800/60 p-4 rounded-2xl transition-all duration-300 backdrop-blur-sm">
+                    <a href="https://www.facebook.com/martin.bucnak.3/" target="_blank" class="group relative flex items-center justify-between w-full max-w-md bg-zinc-900/40 border border-zinc-800/50 hover:border-sky-400/50 hover:bg-zinc-800/60 p-4 rounded-2xl transition-all duration-300 backdrop-blur-sm">
                         <div class="flex items-center space-x-4">
                             <div class="p-2 bg-zinc-800 rounded-lg group-hover:bg-sky-400 group-hover:text-white transition-colors"><i data-lucide="facebook" size="20"></i></div>
                             <span class="font-medium text-zinc-200 group-hover:text-white transition-colors">Facebook</span>
@@ -110,6 +121,21 @@
                         <div class="w-2 h-2 rounded-full bg-zinc-700 group-hover:bg-sky-400 transition-colors"></div>
                     </a>
 
+                    <!-- Tel číslo Copy Button -->
+                    <button onclick="copyEmail('+420704036302', this)" class="group relative flex items-center justify-between w-full max-w-md bg-zinc-900/40 border border-zinc-800/50 hover:border-sky-400/50 hover:bg-zinc-800/60 p-4 rounded-2xl transition-all duration-300 backdrop-blur-sm cursor-pointer">
+                        <div class="flex items-center space-x-4">
+                            <!-- Replaced "mail" with "phone" below -->
+                            <div class="p-2 bg-zinc-800 rounded-lg group-hover:bg-sky-400 group-hover:text-white transition-colors">
+                                <i data-lucide="phone" size="20"></i>
+                            </div>
+                            <span class="font-medium text-zinc-200 group-hover:text-white transition-colors">Tel.: +420 704 036 302</span>
+                        </div>
+                        <div class="text-zinc-500 group-hover:text-zinc-300 icon-area">
+                            <i data-lucide="copy" size="18"></i>
+                        </div>
+                    </button>
+
+                    <!-- TOTO JE LINKEDIN A GITHUB KONTAKT
                     <a href="https://linkedin.com/in/martinbucnak" target="_blank" class="group relative flex items-center justify-between w-full max-w-md bg-zinc-900/40 border border-zinc-800/50 hover:border-sky-400/50 hover:bg-zinc-800/60 p-4 rounded-2xl transition-all duration-300 backdrop-blur-sm">
                         <div class="flex items-center space-x-4">
                             <div class="p-2 bg-zinc-800 rounded-lg group-hover:bg-sky-400 group-hover:text-white transition-colors"><i data-lucide="linkedin" size="20"></i></div>
@@ -125,17 +151,7 @@
                         </div>
                         <div class="w-2 h-2 rounded-full bg-zinc-700 group-hover:bg-sky-400 transition-colors"></div>
                     </a>
-
-                    <!-- Email Copy Button -->
-                    <button onclick="copyEmail('martin@bucnak.cz', this)" class="group relative flex items-center justify-between w-full max-w-md bg-zinc-900/40 border border-zinc-800/50 hover:border-sky-400/50 hover:bg-zinc-800/60 p-4 rounded-2xl transition-all duration-300 backdrop-blur-sm cursor-pointer">
-                        <div class="flex items-center space-x-4">
-                            <div class="p-2 bg-zinc-800 rounded-lg group-hover:bg-sky-400 group-hover:text-white transition-colors"><i data-lucide="mail" size="20"></i></div>
-                            <span class="font-medium text-zinc-200 group-hover:text-white transition-colors">Email: martin@bucnak.cz</span>
-                        </div>
-                        <div class="text-zinc-500 group-hover:text-zinc-300 icon-area">
-                            <i data-lucide="copy" size="18"></i>
-                        </div>
-                    </button>
+                    -->
 
                 </div>
             </div>
@@ -146,7 +162,7 @@
     <section id="skills" class="bg-zinc-900/20 py-24 md:py-32 px-6 border-y border-zinc-800/50">
         <div class="max-w-7xl mx-auto">
             <div class="reveal-on-scroll reveal-hidden text-center md:text-left mb-20">
-                <h2 class="text-3xl md:text-5xl font-black text-white tracking-tighter mb-4">Co dokážu</h2>
+                <h2 class="text-3xl md:text-5xl font-black text-white tracking-tighter mb-4">Dovednosti & Služby</h2>
                 <div class="w-20 h-1 bg-sky-400 rounded-full mb-10 md:mx-0 mx-auto"></div>
 
                 <!-- Main Skills Grid -->
@@ -155,17 +171,17 @@
                     <div class="bg-zinc-900/40 border border-zinc-800/50 p-8 rounded-3xl hover:border-sky-400/30 transition-all duration-700 reveal-on-scroll reveal-hidden delay-100">
                         <div class="mb-6 p-4 bg-zinc-800/50 rounded-2xl inline-block text-sky-400"><i data-lucide="box" size="32"></i></div>
                         <h3 class="text-xl font-bold text-white mb-3">3D Modelování</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">Vytvářím detailní digitální modely pro vizualizace, architekturu i technické využití.</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">Vytvářím kvalitní funkčí modely ve Fusion 360. Zároveň zvládám základy v Blender.</p>
                         <div class="p-4 bg-sky-400/5 rounded-xl border border-sky-400/10">
                             <p class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1">Co nabízím:</p>
-                            <p class="text-zinc-300 text-sm italic">Nabízím tvorbu modelů na zakázku (Blender, CAD).</p>
+                            <p class="text-zinc-300 text-sm italic">Nabízím tvorbu modelů na zakázku (Fusion&nbsp;360, Blender)</p>
                         </div>
                     </div>
                     <!-- Skill 2 -->
                     <div class="bg-zinc-900/40 border border-zinc-800/50 p-8 rounded-3xl hover:border-sky-400/30 transition-all duration-700 reveal-on-scroll reveal-hidden delay-200">
                         <div class="mb-6 p-4 bg-zinc-800/50 rounded-2xl inline-block text-sky-400"><i data-lucide="layers" size="32"></i></div>
                         <h3 class="text-xl font-bold text-white mb-3">3D Tisk</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">Realizace vašich nápadů z plastu s důrazem na přesnost a kvalitu povrchu.</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">Na 3D tiskárně dokážu vytisknou téměř vše, stačí napsat.</p>
                         <div class="p-4 bg-sky-400/5 rounded-xl border border-sky-400/10">
                             <p class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1">Co nabízím:</p>
                             <p class="text-zinc-300 text-sm italic">Nabízím tisk prototypů, dárků i náhradních dílů.</p>
@@ -174,18 +190,19 @@
                     <!-- Skill 3 -->
                     <div class="bg-zinc-900/40 border border-zinc-800/50 p-8 rounded-3xl hover:border-sky-400/30 transition-all duration-700 reveal-on-scroll reveal-hidden delay-300">
                         <div class="mb-6 p-4 bg-zinc-800/50 rounded-2xl inline-block text-sky-400"><i data-lucide="code-2" size="32"></i></div>
-                        <h3 class="text-xl font-bold text-white mb-3">Programování (Python)</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">Vývoj efektivních skriptů, automatizace úloh a analýza dat.</p>
+                        <h3 class="text-xl font-bold text-white mb-3">Tvorba webových stránek</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">Vytvářím webové stránky, jak pro osobní využití, tak pro firmy. (HTML, CSS, JavaScript)</p>
                         <div class="p-4 bg-sky-400/5 rounded-xl border border-sky-400/10">
-                            <p class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1">Co nabízím:</p>
-                            <p class="text-zinc-300 text-sm italic">Nabízím tvorbu botů, skriptů pro čištění dat a backend řešení.</p>
+                            <p class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1">Nabízím:</p>
+                            <p class="text-zinc-300 text-sm italic">Tvorbu krásných webových stránek. (bez propojení databáze) </p>
                         </div>
                     </div>
+                    
                 </div>
 
                 <!-- Tech Stack -->
                 <div class="reveal-on-scroll reveal-hidden delay-500">
-                    <h3 class="text-xl md:text-2xl font-bold text-zinc-100 mb-8 tracking-tight">Technologie & Nástroje</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-zinc-100 mb-8 tracking-tight">Další dovednosti</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         <div class="flex items-center space-x-5 bg-zinc-900/30 border border-zinc-800/40 p-5 rounded-2xl hover:border-sky-400/20 transition-all duration-300 group">
                             <div class="p-3 bg-zinc-800/60 rounded-xl group-hover:bg-sky-400/10 transition-colors text-sky-400"><i data-lucide="layout" size="24"></i></div>
@@ -211,7 +228,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 reveal-on-scroll reveal-hidden">
                 <div>
                     <h2 class="text-3xl md:text-5xl font-black text-white tracking-tighter mb-4">Moje Projekty</h2>
-                    <p class="text-zinc-400 max-w-md">Průřez mou dosavadní tvorbou, kde kombinuji estetiku s technickou precizností.</p>
+                    <p class="text-zinc-400 max-w-md">Projekty, soutěže i moje koníčky.</p>
                 </div>
                 <div class="flex space-x-2">
                     <span class="w-12 h-1 bg-sky-400 rounded-full"></span>
@@ -222,15 +239,17 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 <!-- Project 1 -->
+                 <!--FUNKČNÍ DETAILY!!!!-->
                 <div class="group bg-zinc-900/30 border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-sky-400/30 transition-all duration-1000 flex flex-col h-full reveal-on-scroll reveal-hidden delay-100">
                     <div class="aspect-[4/3] overflow-hidden bg-zinc-800">
                         <img src="https://picsum.photos/seed/project1/800/600" alt="Projekt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Moderní Webová Aplikace</h3>
+                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Prototyp Aplikace</h3>
                         <p class="text-zinc-400 text-sm leading-relaxed mb-4 flex-grow">Komplexní systém pro správu uživatelských dat a vizualizaci statistik v reálném čase.</p>
                         <div class="pt-4 mt-auto border-t border-zinc-800/50 flex items-center text-xs font-bold uppercase tracking-wider text-sky-400 group-hover:text-sky-300 transition-colors">
-                            Zobrazit detaily <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                            
+                            <a href="https://www.w3schools.com/">Zobrazit detaily</a> <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                         </div>
                     </div>
                 </div>
@@ -241,7 +260,7 @@
                         <img src="https://picsum.photos/seed/project2/800/600" alt="Projekt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">E-commerce Platforma</h3>
+                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Samsung Solve For Tomorrow</h3>
                         <p class="text-zinc-400 text-sm leading-relaxed mb-4 flex-grow">Design a vývoj uživatelského rozhraní pro online obchod s důrazem na konverzi a mobilní zařízení.</p>
                         <div class="pt-4 mt-auto border-t border-zinc-800/50 flex items-center text-xs font-bold uppercase tracking-wider text-sky-400 group-hover:text-sky-300 transition-colors">
                             Zobrazit detaily <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -255,7 +274,7 @@
                         <img src="https://picsum.photos/seed/project3/800/600" alt="Projekt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Mobilní Aplikace "FitTrack"</h3>
+                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Hackathon 2026</h3>
                         <p class="text-zinc-400 text-sm leading-relaxed mb-4 flex-grow">Návrh intuitivního rozhraní pro fitness aplikaci sledující denní aktivitu a stravu uživatelů.</p>
                         <div class="pt-4 mt-auto border-t border-zinc-800/50 flex items-center text-xs font-bold uppercase tracking-wider text-sky-400 group-hover:text-sky-300 transition-colors">
                             Zobrazit detaily <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -269,8 +288,8 @@
                         <img src="https://picsum.photos/seed/project4/800/600" alt="Projekt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Branding & Identita</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-4 flex-grow">Kompletní vizuální styl pro technologický startup, od loga až po prezentaci značky.</p>
+                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Model základní školy</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-4 flex-grow">měřítko 1:200</p>
                         <div class="pt-4 mt-auto border-t border-zinc-800/50 flex items-center text-xs font-bold uppercase tracking-wider text-sky-400 group-hover:text-sky-300 transition-colors">
                             Zobrazit detaily <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                         </div>
@@ -282,7 +301,7 @@
                         <img src="https://picsum.photos/seed/project5/800/600" alt="Projekt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">UI Design Dashboard</h3>
+                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Samsung Innovation Sprint</h3>
                         <p class="text-zinc-400 text-sm leading-relaxed mb-4 flex-grow">Prototyp administrátorského panelu s pokročilými filtry a interaktivními grafy.</p>
                         <div class="pt-4 mt-auto border-t border-zinc-800/50 flex items-center text-xs font-bold uppercase tracking-wider text-sky-400 group-hover:text-sky-300 transition-colors">
                             Zobrazit detaily <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -295,7 +314,7 @@
                         <img src="https://picsum.photos/seed/project6/800/600" alt="Projekt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Interaktivní Portfolio</h3>
+                        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-sky-400 transition-colors">Funkční diferenciál</h3>
                         <p class="text-zinc-400 text-sm leading-relaxed mb-4 flex-grow">Webová prezentace fotografa s využitím moderních animací a optimalizací.</p>
                         <div class="pt-4 mt-auto border-t border-zinc-800/50 flex items-center text-xs font-bold uppercase tracking-wider text-sky-400 group-hover:text-sky-300 transition-colors">
                             Zobrazit detaily <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -315,15 +334,18 @@
                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
             </div>
-            <h2 class="text-2xl font-bold text-white mb-8 tracking-tight">Máte zájem o spolupráci?</h2>
+            <h2 class="text-2xl font-bold text-white mb-8 tracking-tight">Zájem o spolupráci?</h2>
             <div class="flex space-x-4 mb-10">
-                <a href="https://instagram.com/martinbucnak" class="p-3 bg-zinc-800/50 border border-zinc-800 rounded-2xl hover:bg-sky-400 hover:border-sky-300 hover:text-white hover:-translate-y-1 transition-all duration-300"><i data-lucide="instagram"></i></a>
-                <a href="https://facebook.com/martinbucnak" class="p-3 bg-zinc-800/50 border border-zinc-800 rounded-2xl hover:bg-sky-400 hover:border-sky-300 hover:text-white hover:-translate-y-1 transition-all duration-300"><i data-lucide="facebook"></i></a>
+                <a href="https://www.instagram.com/martin.penguin/" class="p-3 bg-zinc-800/50 border border-zinc-800 rounded-2xl hover:bg-sky-400 hover:border-sky-300 hover:text-white hover:-translate-y-1 transition-all duration-300"><i data-lucide="instagram"></i></a>
+                <a href="https://www.facebook.com/martin.bucnak.3/" class="p-3 bg-zinc-800/50 border border-zinc-800 rounded-2xl hover:bg-sky-400 hover:border-sky-300 hover:text-white hover:-translate-y-1 transition-all duration-300"><i data-lucide="facebook"></i></a>
+                <!-- LIKEDIN
                 <a href="https://linkedin.com/in/martinbucnak" class="p-3 bg-zinc-800/50 border border-zinc-800 rounded-2xl hover:bg-sky-400 hover:border-sky-300 hover:text-white hover:-translate-y-1 transition-all duration-300"><i data-lucide="linkedin"></i></a>
-                <a href="mailto:martin@bucnak.cz" class="p-3 bg-zinc-800/50 border border-zinc-800 rounded-2xl hover:bg-sky-400 hover:border-sky-300 hover:text-white hover:-translate-y-1 transition-all duration-300"><i data-lucide="mail"></i></a>
+                -->
+                <a href="mailto:mbucnak@gmail.com" class="p-3 bg-zinc-800/50 border border-zinc-800 rounded-2xl hover:bg-sky-400 hover:border-sky-300 hover:text-white hover:-translate-y-1 transition-all duration-300"><i data-lucide="mail"></i></a>
             </div>
+            <p>Tel.: +420 704 036 302</p>
             <p class="text-zinc-500 text-sm font-medium">
-                &copy; <span id="year"></span> Martin Bucňák. Vytvořeno s vášní pro design.
+                &copy; <span id="year"></span> Martin Bucňák
             </p>
         </div>
     </footer>
